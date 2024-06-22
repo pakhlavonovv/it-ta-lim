@@ -1,0 +1,12 @@
+.footer{
+    margin-top: 100px;
+    .footer__wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        .footer__actions{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}

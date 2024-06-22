@@ -1,0 +1,42 @@
+.about{
+    .about__wrapper{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 28px;
+        .about__card{
+            button{
+                width: 166px;
+                height: 36px;
+                border-radius: 20px;
+                border: none;
+                background-color: #CCCCCC;
+                color: #184AFB;
+                transition: 0.4s;
+                &:hover{
+                    background-color: #184AFB;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    .about{
+        .about__wrapper{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 30px;
+            .about__card{
+                h1{
+                    width: 493px;
+                }
+                p{
+                    width: 408px;
+                }
+            }
+        }
+    }
+}

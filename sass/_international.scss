@@ -1,0 +1,101 @@
+.international{
+    margin-top: 100px;
+    .international__img{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        img{
+            width: 121px;
+            height: 20px;
+        }
+    }
+    .international__wrapper{
+        margin-top: 70px;
+        .international__left{
+            background-image: url('../img/inter-hero.svg');
+            width: 100%;
+            height: 70vh;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            padding: 40px;
+            object-fit: cover;
+                p{
+                    color: #fff;
+                    width: 246px;
+                }
+        }
+        .international__right{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .international__card{
+            width: 100%;
+            height: 204px;
+            border: 2px solid #CCCCCC;
+            border-radius: 20px;
+            padding: 30px;
+                .international__card__top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    h3{
+                        font-weight: 400;
+                        color: #56585E;
+                    }
+                    img{
+                        transition: 0.5s;
+                        cursor: pointer;
+                        &:hover{
+                            // transform: translateY(-10px);
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+                button{
+                    margin-top: 70px;
+                    width: 160px;
+                    height: 36px;
+                    background-color: #F5F5F5;
+                    color: #184AFB;
+                    border-radius: 20px;
+                    border: 1px solid #F5F5F5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    transition: 0.4s;
+                    &:hover{
+                        background-color: transparent;
+                        border: 1px solid #F5F5F5;
+                    }
+                }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .international{
+
+        .international__img{
+            display: flex;
+            gap: 50px;
+        }
+        .international__wrapper{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 50px;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .international{
+        .international__wrapper{
+            .international__left{
+                width: 100%;
+            }
+            .international__right{
+                width: 80%;
+            }
+        }
+    }
+}

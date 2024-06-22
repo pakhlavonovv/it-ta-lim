@@ -1,0 +1,52 @@
+.possibilities__second{
+    .possibilities__img{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        img{
+            width: 166px;
+            height: 20px;
+        }
+    }
+    .possibilities__cards{
+        display: grid;
+        grid-template-columns: auto;
+        margin-top: 50px;
+        gap: 20px;
+        .possibilities__card{
+            padding: 40px;
+            background-color: #F5F5F5;
+            border-radius: 8px;
+            .possibilities__second__card__info{
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+                .card__img{
+                    width: 172px;
+                    height: 120px;
+                }
+                .possibilities__second__card__info__bottom{
+                    img{
+                        width: 36px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 600px) {
+    .possibilities__second{
+        .possibilities__img{
+            display: flex;
+            flex-direction: row;
+            gap: 100px;
+        }
+        .possibilities__cards{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+}

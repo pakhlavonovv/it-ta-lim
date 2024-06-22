@@ -1,0 +1,67 @@
+.study{
+    .study__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .study__cards{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        .study__card{
+            padding: 40px;
+            background-color: transparent;
+            border-radius: 8px;
+            border: 1px solid #CCCCCC;
+            .study__card__info{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                img{
+                    width: 200px;
+                    height: 100%;
+                }
+                p{
+                    font-weight: 400;
+                }
+            }
+            .study__card__bottom__info{
+                display: flex;
+                gap: 10px;
+                p{
+                    color: #184AFB;
+                    font-weight: 300;
+                }
+                img{
+                    margin-top: 5px;
+    
+                    width: 20px;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 632px) {
+    .study{
+        .study__wrapper{
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
+        }
+        .study__cards{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .study{
+        .study__cards{
+            display: grid;
+            grid-template-columns: auto auto auto; 
+        }
+    }
+}
