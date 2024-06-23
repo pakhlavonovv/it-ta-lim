@@ -1,8 +1,9 @@
-@use "../../../reset";
 @use "../../../navbar";
+@use "../../../reset";
 @use "./hero";
-@use "./level";
-@use "./plan";
+@use "./strategy";
+@use "./possibilities";
+@use "./work";
 @use "../../../sass/second_partner";
 @use "../../../sass/partner";
 @use "../../../footer";

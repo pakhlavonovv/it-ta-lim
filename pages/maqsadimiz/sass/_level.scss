@@ -1,0 +1,64 @@
+.level{ 
+    margin-top: 100px;
+    .level__wrapper{
+        .level__title{
+            h1{
+
+                font-weight: 600;
+            }
+        }
+        .level__cards{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: auto;
+            gap: 20px;
+            .level__card{
+                .level__card__top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #F5F5F5;
+                    border-radius: 8px;
+                    padding: 40px;
+                }
+                .level__card__bottom{
+                    padding: 10px;
+                    p{
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .level{
+        .level__wrapper{
+            .level__cards{
+                display: grid;
+                grid-template-columns: auto auto;
+                .level__card{
+                    width: 400px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .level{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: end;
+        padding-right: 60px;
+        .level__wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            .level__cards{
+                .level__card{
+                    width: 487px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.possibilities{
+    margin-top: 100px;
+    .possibilities__img{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        img{
+            width: 166px;
+            height: 20px;
+        }
+    }
+    .possibilities__cards{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        .possibilities__card{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            img{
+                width: 72px;
+                height: 72px;
+            }
+            p{
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@media (min-width: 868px) {
+    .possibilities{
+        .possibilities__img{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .possibilities__cards{
+            justify-content: end;
+            .possibilities__card{
+                p{
+                    width: 394px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .possibilities{
+        .possibilities__cards{
+            margin-right: 70px;
+        }
+    }
+}
