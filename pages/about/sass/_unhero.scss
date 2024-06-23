@@ -1,0 +1,72 @@
+.unhero{
+    .hero__cards{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 40px;
+        .hero__card{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            border: 1px solid rgba(209, 209, 209, 0.961);
+            border-radius: 8px;
+        }
+    }
+    .hero__card__info{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        p{
+            font-weight: 300;
+        }
+        button{
+            width: 70%;
+            height: 40px;
+            border-radius: 20px;
+            border: none;
+            color: #184AFB;
+            transition: all ease 0.4s;
+            &:hover{
+                background-color: #184AFB;
+                color: #d5d5d5;
+            }
+        }
+    }
+}
+@media (min-width: 600px) {
+    .unhero{
+        .hero__cards{
+            display: flex;
+            justify-content: end;
+            .hero__card{
+                width: 487px;
+            }
+        }
+        .hero__card__info{
+            margin-top: 20px;
+            display: flex;
+            justify-content: end;
+            button{
+                width: 30%;
+            }
+            p{
+                width: 70%;
+            }
+        }
+    }
+}
+@media (min-width: 1300px) {
+    .unhero{
+        .hero__card__info{
+            display: flex;
+            justify-content: end;
+            p{
+                width: 50%;
+            }
+            button{
+                width: 20%;
+            }
+        }
+    }
+}

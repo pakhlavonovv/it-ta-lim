@@ -1,0 +1,27 @@
+.actions{
+    margin-top: 100px;
+    .actions__info{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        h1{
+            font-weight: 400;
+        }
+        p{
+            font-weight: 300;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .actions{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        .actions__info{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            width: 50%;
+        }
+    }
+}
